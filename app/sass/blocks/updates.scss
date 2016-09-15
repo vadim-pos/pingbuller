@@ -1,0 +1,74 @@
+.updates {
+	position: relative;
+	padding: 0 0 30px 0;
+}
+.updates__header {
+	margin: 0 0 10px 0;
+	font-family: $leagueGothic-regular;
+	font-size: $title-mid;
+	font-weight: lighter;
+	color: $main-black;
+	text-transform: uppercase;
+}
+.updates__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.updates__item {
+	position: relative;
+	margin-bottom: 15px;
+	padding-left: 65px;
+}
+.updates__item-link {
+	text-decoration: none;
+
+	&:hover .updates__title {
+		color: #6a6a6a;
+	}
+}
+.updates__title {
+	margin: 0;
+	font-family: $openSans-extrabold;
+	font-size: $font-base;
+	font-weight: lighter;
+	color: $main-black;
+}
+.updates__sub {
+	font-family: $openSans-light;
+	font-size: $font-base;
+	font-weight: lighter;
+	color: $main-black;
+}
+.updates__image-wrap {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -5px;
+	left: 0;
+	border-radius: 100%;
+	overflow: hidden;
+}
+.updates__more-link {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-family: $leagueGothic-regular;
+	font-size: $font-mid;
+	font-weight: lighter;
+	color: $main-black;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+// ----- Media queries -----
+@media (min-width: $tablet-widths) {
+	.updates {
+		float: right;
+		width: 48%;
+	}
+}

@@ -1,0 +1,190 @@
+extends templates/main.pug
+
+block title
+	title Title
+
+block content
+	.main-wrapper
+		header.page-header
+			.container
+				.page-header__logo
+					.logo
+						a.logo__link(href='index.html')
+							h1.logo__title Pingbuller
+							img.logo__image(src="img/logo.png")
+				.page-header__navigation
+					// has .navigation--active !!!
+					nav.navigation
+						.navigation__trigger-wrap
+							// has .navigation__trigger--active !!!
+							a.navigation__trigger(href="#") Home
+						ul.navigation__list
+							li.navigation__item.navigation__item--current
+								a.navigation__link(href="#" data-dest="page-header") Home
+							li.navigation__item
+								a.navigation__link(href="#" data-dest="about") About
+							li.navigation__item
+								a.navigation__link(href="#" data-dest="blog") Blog
+							li.navigation__item
+								a.navigation__link(href="#" data-dest="clients") Clients
+							li.navigation__item
+								a.navigation__link(href="#" data-dest="company") Company
+				.page-header__slider
+					.main-slider.slider
+						.main-slider__slides-wrap.slider__wrap
+							ul.main-slider__list.slider__slides
+								li.main-slider__item
+									.main-slider-inner
+										.main-slider__title Lorem ipsum dolor
+										.main-slider__sub Lorem ipsum dolor sit amet.
+										.main-slider__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus inventore eum saepe suscipit nam ipsam non, et vero, facere fugiat velit quis. Distinctio quod optio hic minima sed? Quo, ut.
+										.main-slider__image-wrap
+											img.main-slider__image(src="img/phone.png")
+								li.main-slider__item
+									.main-slider-inner
+										.main-slider__title Lorem ipsum dolor sit
+										.main-slider__sub Lorem ipsum dolor sit amet, consectetur adipisicing.
+										.main-slider__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorum consectetur fugit eligendi earum ducimus dolor aspernatur cupiditate tenetur, doloremque nulla assumenda sunt a delectus incidunt amet inventore error nemo!	
+										.main-slider__image-wrap
+											img.main-slider__image(src="img/phone.png")
+								li.main-slider__item
+									.main-slider-inner
+										.main-slider__title Lorem ipsum dolor sit amet, consectetur
+										.main-slider__sub Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, illum, aliquam.
+										.main-slider__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati recusandae cupiditate magni odit porro omnis excepturi nam error vitae. Quis dicta nesciunt neque accusantium doloribus rerum dolorum, distinctio ullam!
+										.main-slider__image-wrap
+											img.main-slider__image(src="img/phone.png")
+								li.main-slider__item
+									.main-slider-inner
+										.main-slider__title Lorem ipsum
+										.main-slider__sub Lorem ipsum dolor sit amet, consectetur adipisicing.
+										.main-slider__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa natus enim, sunt nemo provident blanditiis in nulla! Sed dicta modi maiores nisi tempore ratione in sapiente, maxime repudiandae reiciendis voluptas?
+										.main-slider__image-wrap
+											img.main-slider__image(src="img/phone.png")
+						.main-slider__dots-wrap
+							ul.main-slider__dots.slider__pagination
+						a.main-slider__nav.main-slider__nav--prev.slider__prev(href="#")
+						a.main-slider__nav.main-slider__nav--next.slider__next(href="#")
+		section.about
+			.container
+				ul.about__list
+					li.about__item.about__item--icon-1
+						h3.about__title About our company
+						p.about__desc.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati recusandae cupiditate magni odit porro omnis excepturi nam error vitae. Quis dicta nesciunt neque accusantium doloribus rerum dolorum, distinctio ullam!
+						a.about__link(href="#") Read more
+					li.about__item.about__item--icon-2
+						h3.about__title About our company
+						p.about__desc.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati recusandae cupiditate magni odit porro omnis excepturi nam error vitae. Quis dicta nesciunt neque accusantium doloribus rerum dolorum, distinctio ullam!
+						a.about__link(href="#") Read more
+					li.about__item.about__item--icon-3
+						h3.about__title About our company
+						p.about__desc.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati recusandae cupiditate magni odit porro omnis excepturi nam error vitae. Quis dicta nesciunt neque accusantium doloribus rerum dolorum, distinctio ullam!
+						a.about__link(href="#") Read more
+		section.blog
+			.container
+				.testimonials.slider
+					.testimonials__list-wrap.slider__wrap
+						ul.testimonials__list.slider__slides
+							li.testimonials__item
+								.testimonials__inner
+									.testimonials__image-wrap
+										img.testimonials__image(src="img/portrait_1.jpg")
+									.testimonials__title Pingbuller
+									.testimonials__sub Starts here
+									.testimonials__content.
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati recusandae cupiditate magni odit porro.
+							li.testimonials__item
+								.testimonials__inner
+									.testimonials__image-wrap
+										img.testimonials__image(src="img/portrait_2.jpg")
+									.testimonials__title Pingbuller
+									.testimonials__sub Lorem
+									.testimonials__content.
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit!
+							li.testimonials__item
+								.testimonials__inner
+									.testimonials__image-wrap
+										img.testimonials__image(src="img/portrait_3.jpg")
+									.testimonials__title Pingbuller
+									.testimonials__sub Lorem ipsum dolor
+									.testimonials__content.
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati recusandae cupiditate magni odit porro omnis excepturi nam error vitae. Quis dicta!
+							li.testimonials__item
+								.testimonials__inner
+									.testimonials__image-wrap
+										img.testimonials__image(src="img/portrait_4.jpg")
+									.testimonials__title Atque obcaecati recusandae
+									.testimonials__sub Lorem ipsum dolor sit amet, consectetur adipisicing
+									.testimonials__content.
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati recusandae cupiditate magni odit porro omnis excepturi nam error vitae.
+					.testimonials__nav-wrap
+						ul.testimonials__nav.slider__pagination
+				.updates
+					h2.updates__header Recent updates
+					ul.updates__list
+						li.updates__item
+							a.updates__item-link(href="#")
+								h3.updates__title Lorem ipsum dolor
+								.updates__sub Posted by Admin on March 13
+								.updates__image-wrap
+									img.updates__image(src="img/updates-icon-1.jpg")
+						li.updates__item
+							a.updates__item-link(href="#")
+								h3.updates__title Lorem ipsum dolor
+								.updates__sub Posted by Admin on March 13
+								.updates__image-wrap
+									img.updates__image(src="img/updates-icon-2.jpg")
+						li.updates__item
+							a.updates__item-link(href="#")
+								h3.updates__title Lorem ipsum dolor
+								.updates__sub Posted by Admin on March 13
+								.updates__image-wrap
+									img.updates__image(src="img/updates-icon-3.jpg")
+					a.updates__more-link(href="#") More blog posts
+		section.clients
+			.container
+				ul.clients__list
+					li.clients__item
+						img.clients__image(src="img/logos-1.jpg")
+					li.clients__item
+						img.clients__image(src="img/logos-2.jpg")
+					li.clients__item
+						img.clients__image(src="img/logos-3.jpg")
+					li.clients__item
+						img.clients__image(src="img/logos-4.jpg")
+					li.clients__item
+						img.clients__image(src="img/logos-5.jpg")
+					li.clients__item
+						img.clients__image(src="img/logos-6.jpg")
+		section.company
+			.container
+				ul.company__list
+					li.company__item
+						h3.company__title.company__title--big Pingbull#[span.company__title--accent er]
+						.company__copyright Copyright 2015, Pingbull AS
+						.company__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati recusandae cupiditate magni odit porro omnis excepturi nam error cupiditate magni odit porro omnis excepturi nam error vitae.
+					li.company__item
+						h3.company__title Recent news
+						.company__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati recusandae cupiditate magni odit porro omnis excepturi nam error cupiditate magni odit porro omnis excepturi nam error vitae.
+					li.company__item
+						h3.company__title News categories
+						.company__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque obcaecati recusandae cupiditate magni odit porro omnis excepturi nam error cupiditate magni odit porro omnis excepturi nam error vitae.
+
+	footer.page-footer
+		.container
+			nav.page-footer__nav
+				ul.page-footer__nav-list
+					li.page-footer__nav-item
+						a.page-footer__nav-link(href="#" data-dest="page-header") Home
+					li.page-footer__nav-item
+						a.page-footer__nav-link(href="#" data-dest="about") About
+					li.page-footer__nav-item
+						a.page-footer__nav-link(href="#" data-dest="blog") Blog
+					li.page-footer__nav-item
+						a.page-footer__nav-link(href="#" data-dest="clients") Clients
+					li.page-footer__nav-item
+						a.page-footer__nav-link(href="#" data-dest="company") Company
+			.page-footer__copyright Designed by #[span.page-footer__copyright--company Pingbull AS]

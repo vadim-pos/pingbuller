@@ -1,0 +1,39 @@
+.page-header {
+	min-height: 516px;
+	padding: 69px 0 65px 0;
+	background: url("../img/page-header-bg.jpg") center center;
+	background-size: cover;
+	border-bottom: 1px solid #34273b;
+	font-size: 0;
+}
+.page-header__logo {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.page-header__navigation {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 24px;
+	position: relative;
+}
+// ----- Media queries -----
+@media (min-width: $tablet-widths) {
+	.page-header__logo {
+		text-align: left;
+	}
+	.page-header__navigation {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: $desctop-widths) {
+	.page-header__logo {
+		display: inline-block;
+		width: 25%;
+		padding-bottom: 0;
+	}
+	.page-header__navigation {
+		display: inline-block;
+		width: 75%;
+		vertical-align: top;
+	}
+}

@@ -1,0 +1,104 @@
+.about {
+	padding: 65px 0;
+	border-bottom: 1px solid #12191f;
+	background: #765284; /* Old browsers */ /* FF3.6-15 */
+    background: -webkit-linear-gradient(#765284 0%, #37293e 100%);
+    background: -o-linear-gradient(#765284 0%, #37293e 100%);
+    background: linear-gradient(#765284 0%, #37293e 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#765284', endColorstr='#37293e',GradientType=0 ); /* IE6-9 */
+}
+.about__list {
+	margin: 0;
+	padding: 0 5px 0 0;
+	list-style: none;
+}
+.about__item {
+	position: relative;
+	padding: 0 0 30px 55px;
+	margin-bottom: 15px;
+}
+.about__item--icon-1 {
+	&:before {
+		position: absolute;
+		width: 31px;
+		height: 31px;
+		top: 5px;
+		left: 5px;
+		content: "";
+		background: url("../img/icons-sprite.png") 0 -76px;
+	}
+}
+.about__item--icon-2 {
+	&:before {
+		position: absolute;
+		width: 33px;
+		height: 27px;
+		top: 5px;
+		left: 5px;
+		content: "";
+		background: url("../img/icons-sprite.png") -51px -76px;
+	}
+}
+.about__item--icon-3 {
+	&:before {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: 5px;
+		left: 5px;
+		content: "";
+		background: url("../img/icons-sprite.png") -101px -76px;
+	}
+}
+.about__title {
+	margin: 0;
+	font-family: $leagueGothic-regular;
+	font-size: $title-mid;
+	font-weight: lighter;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 2px rgba( 0, 0, 0, .5);
+}
+.about__desc {
+	margin: 0;
+	font-family: $openSans-light;
+	font-size: $font-base;
+	color: #fff;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+}
+.about__link {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	font-family: $leagueGothic-regular;
+	font-size: $font-mid;
+	font-weight: lighter;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 0px 2px 2px rgba( 0, 0, 0, .5);
+	transition: text-shadow .2s linear;
+
+	&:hover {
+		text-shadow: 0 0 10px #fff;
+	}
+}
+
+// ----- Media queries -----
+@media (min-width: $tablet-widths) {
+	.about__list {
+		text-align: justify;
+		font-size: 0;
+		&:after {
+			display: inline-block;
+			width: 100%;
+			height: 0;
+			content: "";
+		}
+	}
+	.about__item {
+		display: inline-block;
+		width: 30%;
+		text-align: left;
+	}
+}

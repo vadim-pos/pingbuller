@@ -1,0 +1,16 @@
+.container {
+	margin: 0 auto;
+	width: 280px;
+	@include clearfix();
+	
+	// ----- Media queries -----
+	@media (min-width: $phoneWide-widths) {
+		width: 440px;
+	}
+	@media (min-width: $tablet-widths) {
+		width: 728px;
+	}
+	@media (min-width: $desctop-widths) {
+		width: 920px;
+	}
+}

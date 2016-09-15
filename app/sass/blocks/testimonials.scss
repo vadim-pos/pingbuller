@@ -1,0 +1,121 @@
+.testimonials {
+	position: relative;
+	width: 100%;
+	height: 320px;
+	margin-bottom: 25px;
+	padding-bottom: 40px;
+}
+.testimonials__list-wrap {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	overflow: hidden;
+}
+.testimonials__list {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	font-size: 0;
+	list-style: none;
+	transition: margin .3s linear;
+}
+.testimonials__item {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0 10px 0 24px;
+	white-space: normal;
+	vertical-align: top;
+}
+.testimonials__inner {
+	height: 100%;
+	width: 100%;
+	padding: 25px 5px 25px 35px;
+	background-color: #ffffff;
+	border: 1px solid #eee;
+}
+.testimonials__image-wrap {
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	top: 20px;
+	left: 0;
+	overflow: hidden;
+	border-radius: 100%;
+}
+.testimonials__title {
+	line-height: $title-mid;
+	font-family: $leagueGothic-regular;
+	font-size: $title-big;
+	font-weight: lighter;
+	color: $main-black;
+	text-transform: uppercase;
+}
+.testimonials__sub {
+	line-height: $title-mid;
+	font-family: $leagueGothic-regular;
+	font-size: $title-mid;
+	font-weight: lighter;
+	color: $main-pink;
+	text-transform: uppercase;
+}
+.testimonials__content {
+	margin: 0;
+	font-family: $openSans-light;
+	font-size: $font-base;
+	color: $main-black;
+}
+.testimonials__nav-wrap {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.testimonials__nav {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	list-style: none;
+}
+.testimonials__nav-item {
+	display: inline-block;
+	margin-left: 3px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.testimonials__nav-link {
+	display: block;
+	width: 19px;
+	height: 20px;
+	border: 1px solid transparent;
+	border-radius: 100%;
+	background: url("../img/icons-sprite.png") -90px -50px;
+
+	&:hover {
+		background-position: -121px -50px;
+	}
+	&.active {
+		background-position: -121px -50px;
+	}
+}
+
+// ----- Media queries -----
+@media (min-width: $tablet-widths) {
+	.testimonials {
+		display: inline-block;
+		width: 350px;
+		margin-bottom: 0;
+		vertical-align: top;
+	}
+}
+@media (min-width: $desctop-widths) {
+	.testimonials {
+		width: 440px;
+	}
+}
