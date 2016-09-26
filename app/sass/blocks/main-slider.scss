@@ -93,12 +93,16 @@
 	height: 17px;
 	border-radius: 100%;
 	background: url("../img/icons-sprite.png") 0 -50px;
+	cursor: pointer;
 
 	&:hover {
 		background: #454545;
 	}
 	&.active {
 		background-position: -25px -50px;
+		&:hover {
+			background: url("../img/icons-sprite.png") -25px -50px;
+		}
 	}
 }
 
