@@ -48,6 +48,7 @@
 }
 @media (min-width: $tablet-widths) {
 	.company__list {
+		text-justify: distribute;
 		text-align: justify;
 		&:after {
 			display: inline-block;

@@ -112,6 +112,7 @@
 }
 @media (min-width: $desctop-widths) {
 	.navigation__list {
+		text-justify: distribute;
 		text-align: justify;
 		&:after {
 			display: inline-block;
